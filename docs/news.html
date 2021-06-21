@@ -36,6 +36,7 @@
         <a href="https://github.com/JSoftver/Guessing-Game#readme" target="_blank">Watch</a>
     </div>
     <script>
+        var getWrited;
         var nw = document.getElementById("newwriter");
         if (localStorage.getItem("loggedin") == "true") {
             function writeNew() {
@@ -49,6 +50,14 @@
                 </div>
                 `;
                 bodyBgN.innerHTML += addNew;
+                getWrited += addNew;
+            }
+            function getWritedF() {
+                if (getWrited == undefined) {
+                    alert("You don't have writes");
+                } else {
+                    alert(getWrited);
+                }
             }
             var addHTML = `
             <hr class="hr-big">
@@ -57,7 +66,7 @@
             <br>
             <input type="search" id="ndn" placeholder="Description...">
             <br>
-            <input type="submit" onclick="writeNew()" value="Write">
+            <input type="submit" onclick="writeNew()" value="Write"><input type="submit" onclick="getWritedF()" value="Get writed">
             <hr class="hr-big">    
             `;
             nw.innerHTML += addHTML;
