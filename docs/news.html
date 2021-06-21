@@ -54,15 +54,15 @@
             }
             function getWritedF() {
                 if (getWrited == undefined) {
-                    alert("You don't have writes");
+                    document.getElementById("output").value = "You don't have writes";
                 } else {
-                    alert(getWrited);
+                    document.getElementById("output").value = getWrited;
                 }
             }
             var addHTML = `
             <hr class="hr-big">
             <h3>News writer</h3>
-            <input type="search" id="nname" placeholder="Name...">
+            <input type="search" id="nname" placeholder="Name..."><input type="text" id="output" placeholder="Output">
             <br>
             <input type="search" id="ndn" placeholder="Description...">
             <br>
