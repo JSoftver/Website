@@ -20,7 +20,7 @@ body {
   -moz-background-size:  cover;
   -o-background-size: cover;
   background-size: cover;
-  user-select: text;
+  user-select: all;
 }
 
 input[type="checkbox"] {
@@ -41,7 +41,7 @@ input[type="checkbox"] {
 
 .button {
   cursor: pointer;
-  /* user-select: none; */
+  user-select: none;
 }
 
 .hidden {
@@ -53,7 +53,7 @@ input {
   background-image: url("src/img/bg.jpg");
   border-radius: 2px;
   border: solid gray 2px;
-  /* user-select: none; */
+  user-select: none;
 }
 
 button {
@@ -62,7 +62,7 @@ button {
   color: black;
   border: solid yellow 3px;
   border-radius: 6px;
-  /* user-select: none; */
+  user-select: none;
 }
 
 button:hover {
@@ -71,13 +71,13 @@ button:hover {
   color: yellow;
   border: solid black 3px;
   transition-duration: 0.5s;
-  /* user-select: none; */
+  user-select: none;
 }
 
 .topnav {
   overflow: hidden;
   background-color: #333;
- /*  user-select: none; */
+  user-select: none;
 }
   
 .topnav a {
@@ -87,17 +87,17 @@ button:hover {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  /* user-select: none; */
+  user-select: none;
 }
   
 .topnav a:hover {
   background-color: #ddd;
   color: black;
-  /* user-select: none; */
+  user-select: none;
 }
   
 .topnav a.active {
   background-color: yellow;
   color: black;
-/*   user-select: none;
- */}
+  user-select: none;
+}
