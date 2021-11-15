@@ -101,3 +101,58 @@ button:hover {
   color: black;
   user-select: none;
 }
+
+#btt {
+  color: transparent;
+  background-color: transparent;
+  font-size: 40px;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 65px;
+  height: 65px;
+  text-align: center;
+  line-height: 65px;
+  cursor: pointer;
+  transition-duration: 0.2s;
+  animation-duration: 0.5s;
+  user-select: none;
+}
+
+#btt:hover{
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+  transition-duration: 0.2s;
+  font-size: 48px;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes popupBtt {
+  from {
+      color: transparent;
+      background-color: transparent;
+  }
+
+  to {
+      color: yellow;
+      background-color: gray;
+  }
+}
+
+@keyframes popdownBtt {
+  from {
+    color: yellow;
+    background-color: gray;
+  }
+
+  to {
+      color: transparent;
+      background-color: transparent;
+  }
+}

@@ -24,6 +24,23 @@ var isHidden = false;
     
 }
 
+window.addEventListener("scroll", (event) => {
+    let scroll = this.scrollY;
+    if (scroll > 0) {
+        document.getElementById("btt").classList.remove("hidden");
+        document.getElementById("btt").style.animationName = "popupBtt";
+        document.getElementById("btt").style.color = "yellow";
+        document.getElementById("btt").style.backgroundColor = "gray";
+    } else {
+        document.getElementById("btt").style.animationName = "popdownBtt";
+        document.getElementById("btt").style.color = "transparent";
+        document.getElementById("btt").style.backgroundColor = "transparent";
+        setTimeout(function() {
+            document.getElementById("btt").classList.add("hidden");
+        }, 200);
+    }
+});
+
 /* localStorage {
     localStorage.setItem("sot", "m")
     undefined
